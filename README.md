@@ -38,7 +38,7 @@ In the Layers section of the OpsWorks Management Console, for your layer;
 1. In the "Custom JSON" section, enter the necessary recipe settings.
 
 The recipe settings will be along the lines of:
-###For Deep security as a service deployment:
+### For Deep security as a service deployment:
 Recipe : deep-security-agent::default
 ```javascript
 {
@@ -52,7 +52,7 @@ Recipe : deep-security-agent::default
   }
 }
 ```
-###For DSM deployments:
+### For DSM deployments:
 Recipe : deep-security-agent::dsa-install
 ```
 {
