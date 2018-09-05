@@ -87,7 +87,7 @@ if currentDSAPlatform.installer_file_name =~ /#{PACKAGE_DEB}/
 elsif currentDSAPlatform.installer_file_name =~ /#{PACKAGE_RPM}/
   rpm_package 'ds_agent' do
     source local_file_path
-    action :upgrade
+    action :install
   end
 else
   package 'ds_agent' do
