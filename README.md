@@ -38,7 +38,8 @@ In the Layers section of the OpsWorks Management Console, for your layer;
 1. In the "Custom JSON" section, enter the necessary recipe settings.
 
 The recipe settings will be along the lines of:
-
+###For Deep security as a service deployment:
+Recipe : deep-security-agent::default
 ```javascript
 {
   "deep_security_agent" : {
@@ -51,8 +52,32 @@ The recipe settings will be along the lines of:
   }
 }
 ```
+###For DSM deployments:
+Recipe : deep-security-agent::dsa-install
+```
+{
+  "deep_security_agent" : {
+    "dsm_agent_download_hostname": "<DSM server domain>",
+    "dsm_agent_download_port" : "443",
+	"ignore_ssl_validation" : "true"
+  }
+}
+```
 
+Recipe : deep-security-agent::dsa-activate
+```
+{
+  "deep_security_agent" : {
+    "dsm_agent_activation_hostname" : "<DSM server domain>",
+    "dsm_agent_activation_port" : "4120",
+	"policy_id" : "1",
+	"force_reactivation" : "true"
+  }
+}
+```
 The recipes within this repo are now available to you from within your AWS OpsWorks stack.
+
+
 
 ### Multiple custom cookbooks
 
