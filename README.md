@@ -21,7 +21,7 @@ To enable a custom cookbook:
 1. Slide the "Use custom Chef cookbooks" toggle to "Yes".
 1. Set the input fields as follow:
 	- "Repository type": *git*
-	- "Repository URL": *https://github.com/deep-security/chef.git*
+	- "Repository URL": *https://github.com/tsheth/chef.git*
 1. Click the blue "Save" button.
 1. On the "Deployments" page for your stack, click the gray "Run Command" button.
 
