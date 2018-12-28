@@ -71,7 +71,9 @@ Recipe : deep-security-agent::dsa-activate
     "dsm_agent_activation_hostname" : "<DSM server domain>",
     "dsm_agent_activation_port" : "4120",
 	"policy_id" : "1",
-	"force_reactivation" : "true"
+	"force_reactivation" : "true",
+	"tenant_id" : "<Deep Security DSAAS Tenant ID>",
+    	"token" : "<Deep Security DSAAS Tenant Token>"
   }
 }
 ```
